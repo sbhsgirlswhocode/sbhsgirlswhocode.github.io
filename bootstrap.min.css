@@ -277,7 +277,8 @@ button, select {
 }
 
 [type=reset], [type=submit], button, html [type=button] {
-    -webkit-appearance:button
+    -webkit-appearance:button;
+    appearance:button
 }
 
 [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
@@ -291,7 +292,8 @@ input[type=checkbox], input[type=radio] {
 }
 
 input[type=date], input[type=datetime-local], input[type=month], input[type=time] {
-    -webkit-appearance:listbox
+    -webkit-appearance:listbox;
+    appearance:listbox
 }
 
 textarea {
@@ -328,7 +330,8 @@ progress {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance:none
+    -webkit-appearance:none;
+    appearance:none
 }
 
 [type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
@@ -609,7 +612,7 @@ pre code {
     margin-left:0
 }
 
-.no-gutters > .col, .no-gutters > [class * =col-] {
+.no-gutters > .col, .no-gutters > [class *= col-] {
     padding-right: 0;
     padding-left:0
 }
@@ -1706,7 +1709,7 @@ select.form-control:focus::-ms-value {
     margin-left:-5px
 }
 
-.form-row > .col, .form-row > [class * =col-] {
+.form-row > .col, .form-row > [class *= col-] {
     padding-right: 5px;
     padding-left:5px
 }
@@ -4493,7 +4496,8 @@ button.close {
     padding: 0;
     background: 0 0;
     border: 0;
-    -webkit-appearance:none
+    -webkit-appearance:none;
+    appearance:none
 }
 
 .modal-open {
